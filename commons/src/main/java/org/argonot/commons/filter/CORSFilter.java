@@ -1,4 +1,4 @@
-package org.argonot.commons.filters;
+package org.argonot.commons.filter;
 
 import java.io.IOException;
 

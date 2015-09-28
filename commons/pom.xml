@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.argonot</groupId>
+	<artifactId>commons</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Commons</name>
+	<description>Common library for all the argonots projects</description>
+
+	<properties>
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.framework.version>4.0.9.RELEASE</spring.framework.version>
+		<junit.version>4.12</junit.version>
+		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
+		<javax.servlet.version>2.5</javax.servlet.version>
+	</properties>
+
+	<developers>
+		<developer>
+			<id>m.airouche</id>
+			<name>Meidi Airouche</name>
+			<email>meidi.airouche@gmail.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:https://github.com/mairouche/Argonot-Commons.git</connection>
+		<developerConnection>scm:git:git@github.com:mairouche/Argonot-Commons.git</developerConnection>
+		<url>https://github.com/mairouche/Argonot-Commons</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- JUnit testing framework -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.framework.version}</version>
+		</dependency>
+		<!-- SERVLET -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${javax.servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
