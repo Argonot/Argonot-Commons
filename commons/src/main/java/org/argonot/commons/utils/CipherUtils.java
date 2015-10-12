@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  * @author Meidi
  * 
  */
-public class CipherUtils {
+public final class CipherUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CipherUtils.class);
 
