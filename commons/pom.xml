@@ -6,16 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Argonot Commons</name>
 	<description>Common library for all the argonots projects</description>
-
-	<properties>
-		<java.version>1.7</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.framework.version>4.0.9.RELEASE</spring.framework.version>
-		<junit.version>4.12</junit.version>
-		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
-		<javax.servlet.version>2.5</javax.servlet.version>
-	</properties>
-
+	
 	<developers>
 		<developer>
 			<id>m.airouche</id>
@@ -28,11 +19,35 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:https://github.com/mairouche/Argonot-Commons.git</connection>
-		<developerConnection>scm:git:git@github.com:mairouche/Argonot-Commons.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/mairouche/Argonot-Commons.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/mairouche/Argonot-Commons.git</developerConnection>
 		<url>https://github.com/mairouche/Argonot-Commons</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<distributionManagement>
+		<!-- use the following if you're not using a snapshot version. -->
+		<repository>
+			<id>argonot-release</id>
+			<name>Argonot Release Repository</name>
+			<url>http://62.210.36.105:8082/repository/argonot-release</url>
+		</repository>
+		<!-- use the following if you ARE using a snapshot version. -->
+		<snapshotRepository>
+			<id>argonot-snapshot</id>
+			<name>Argonot Snapshot Repository</name>
+			<url>http://62.210.36.105:8082/repository/argonot-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<properties>
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.framework.version>4.0.9.RELEASE</spring.framework.version>
+		<junit.version>4.12</junit.version>
+		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
+		<javax.servlet.version>2.5</javax.servlet.version>
+	</properties>
 
 	<build>
 		<plugins>
