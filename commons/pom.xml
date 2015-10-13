@@ -46,7 +46,7 @@
 		<spring.framework.version>4.0.9.RELEASE</spring.framework.version>
 		<junit.version>4.12</junit.version>
 		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
-		<javax.servlet.version>2.5</javax.servlet.version>
+		<javax.servlet.version>3.0.1</javax.servlet.version>
 	</properties>
 
 	<build>
@@ -84,7 +84,7 @@
 		<!-- SERVLET -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
+			<artifactId>javax.servlet-api</artifactId>
 			<version>${javax.servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
