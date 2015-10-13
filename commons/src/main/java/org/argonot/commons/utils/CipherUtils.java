@@ -46,8 +46,8 @@ public final class CipherUtils {
         } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException
                 | NoSuchPaddingException e) {
             LOGGER.error("Error while encrypting", e);
+            return null;
         }
-        return null;
     }
 
     /**
@@ -66,7 +66,7 @@ public final class CipherUtils {
         } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException
                 | NoSuchPaddingException e) {
             LOGGER.error("Error while encrypting", e);
+            return null;
         }
-        return null;
     }
 }
