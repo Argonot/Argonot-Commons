@@ -25,11 +25,11 @@ public final class CipherUtils {
 
     private static byte[] key = { 0x74, 0x68, 0x69, 0x73, 0x49, 0x73, 0x41, 0x53, 0x65, 0x63, 0x72, 0x65, 0x74, 0x4b,
             0x65, 0x79 };
-    
+
     private CipherUtils() {
-    	
+
     }
-    
+
     /**
      * Encrypt a data
      * 
@@ -43,7 +43,8 @@ public final class CipherUtils {
             final SecretKeySpec secretKey = new SecretKeySpec(key, "AES");
             cipher.init(Cipher.ENCRYPT_MODE, secretKey);
             return Base64.encodeBase64String(cipher.doFinal(strToEncrypt.getBytes()));
-        } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException | NoSuchPaddingException e) {
+        } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException
+                | NoSuchPaddingException e) {
             LOGGER.error("Error while encrypting", e);
         }
         return null;
@@ -62,7 +63,8 @@ public final class CipherUtils {
             final SecretKeySpec secretKey = new SecretKeySpec(key, "AES");
             cipher.init(Cipher.DECRYPT_MODE, secretKey);
             return new String(cipher.doFinal(Base64.decodeBase64(strToDecrypt)));
-        } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException | NoSuchPaddingException e) {
+        } catch (BadPaddingException | IllegalBlockSizeException | InvalidKeyException | NoSuchAlgorithmException
+                | NoSuchPaddingException e) {
             LOGGER.error("Error while encrypting", e);
         }
         return null;
