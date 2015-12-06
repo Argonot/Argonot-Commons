@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Argonot Commons</name>
 	<description>Common library for all the argonots projects</description>
-	
+
 	<developers>
 		<developer>
 			<id>m.airouche</id>
@@ -44,6 +44,7 @@
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.framework.version>4.0.9.RELEASE</spring.framework.version>
+		<spring.security.version>4.0.2.RELEASE</spring.security.version>
 		<junit.version>4.12</junit.version>
 		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
 		<javax.servlet.version>3.0.1</javax.servlet.version>
