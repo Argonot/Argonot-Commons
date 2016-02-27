@@ -25,21 +25,6 @@
 		<tag>HEAD</tag>
 	</scm>
 
-	<distributionManagement>
-		<!-- use the following if you're not using a snapshot version. -->
-		<repository>
-			<id>argonot-release</id>
-			<name>Argonot Release Repository</name>
-			<url>http://62.210.36.105:8082/repository/argonot-release</url>
-		</repository>
-		<!-- use the following if you ARE using a snapshot version. -->
-		<snapshotRepository>
-			<id>argonot-snapshot</id>
-			<name>Argonot Snapshot Repository</name>
-			<url>http://62.210.36.105:8082/repository/argonot-snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 	<properties>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,28 +49,10 @@
 						<target>${java.version}</target>
 					</configuration>
 				</plugin>
-				<plugin>
-					<groupId>org.jacoco</groupId>
-					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>${jacoco.version}</version>
-					<executions>
-						<execution>
-							<goals>
-								<goal>prepare-agent</goal>
-							</goals>
-						</execution>
-						<execution>
-							<id>report</id>
-							<phase>prepare-package</phase>
-							<goals>
-								<goal>report</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
+	
 	<dependencies>
 		<!-- JUnit testing framework -->
 		<dependency>
