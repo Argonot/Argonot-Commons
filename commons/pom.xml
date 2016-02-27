@@ -33,24 +33,21 @@
 		<junit.version>4.12</junit.version>
 		<hibernate.jpa.version>1.0.1.Final</hibernate.jpa.version>
 		<javax.servlet.version>3.0.1</javax.servlet.version>
-		<jacoco.version>0.7.4.201502262128</jacoco.version>
 		<maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
 	</properties>
 
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven.compiler.plugin.version}</version>
-					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 	
 	<dependencies>
