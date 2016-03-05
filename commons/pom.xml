@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.argonot</groupId>
 	<artifactId>argonot-commons</artifactId>
-	<version>0.0.7-SNAPSHOT</version>
+	<version>0.0.7</version>
 	<name>Argonot Commons</name>
 	<description>Common library for all the argonots projects</description>
 
@@ -21,7 +21,7 @@
 		<connection>scm:git:ssh://git@github.com/mairouche/Argonot-Commons.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/mairouche/Argonot-Commons.git</developerConnection>
 		<url>https://github.com/mairouche/Argonot-Commons</url>
-		<tag>HEAD</tag>
+		<tag>argonot-commons-0.0.7</tag>
 	</scm>
 
 	<distributionManagement>
